@@ -10,7 +10,7 @@ class Hangman:
         self.list_of_guesses = []
 
     def check_guess(self, guess): 
-        count = 0
+        
         print("word is - ", self.word)
         self.guess = guess
         self.guess = self.guess.lower()
@@ -18,15 +18,21 @@ class Hangman:
             print(f"Good guess {self.guess} is in the word. ")
             for i in self.word:
                 if self.guess == i:
-                    self.word_guesses[count] = self.guess 
+                    self.word_guesses[self.num_letters] = self.guess 
                     print(self.word_guesses)
-                    count = count + 1  
-            self.num_lives = self.num_lives -1       
+                    #self.num_letters = self.num_letters + 1  
+                    self.num_lives = self.num_lives -1       
         else:
+            self.num_lives = self.num_lives -1  
             print(f"Sorry {self.guess} is not in the word. Try again.")
+            print(f"you have {self.num_lives} lives left.")
+
+        self.word_guesses[self.num_letters] = self.guess 
+        print(self.word_guesses)
+        self.num_letters = self.num_letters + 1  
     
     def ask_for_input(self):
-        while True:
+        
             self.guess = input("Enter a letter: ")
             if len(self.guess) == 1 and self.guess.isalpha():
                 if self.guess in self.list_of_guesses:
@@ -38,5 +44,5 @@ class Hangman:
             else:
                 print("Invalid input.")
     
-hangman = Hangman(["mango","banana","apple","orange","grapes"], 5 )
+hangman = Hangman(["mango","orange","apple","peach","grape"], 5 )
 hangman.ask_for_input()
