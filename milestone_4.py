@@ -40,7 +40,7 @@ class Hangman:
                 else:
                     print("Good Guess.")
                     self.check_guess(self.guess)
-                break
+                #break
             else:
                 print("Invalid input.")
     

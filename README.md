@@ -11,8 +11,15 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - If it is not then it prints a friendly message.
 
 ## Milestone 3
-- in thsi miolestone, creates two function called ask_in_input and check_guess.
+- In this miolestone, creates two function called ask_in_input and check_guess.
 - ask_in_put() takes the input and validate for alphabate and only one charachter has been entered.
-Calls check_guess() with the parameter which gets from the user.
-- check_guess() with user input parameter, convert taht into lower case first. check it is in the word which computer selected from the world_list.
+  Calls check_guess() with the parameter which gets from the user.
+- check_guess() with user input parameter, convert taht into lower case first. check it is in the word which computer selected   from the world_list.
 it prints the message wheather it is in the word or not.
+
+## Milestone 4
+- create a class with name Hangman.
+- Declares attributes and methods.
+- Initilized with init method. 
+- In ask_for_input() method adding the guesses in word_guess attirbute replaces it with guess. Decrements num_lives.
+- check_guess() check each guess in word. If matches increments word_guess and decrement num_lives.
