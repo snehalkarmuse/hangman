@@ -32,13 +32,14 @@ class Hangman:
         self.num_letters = self.num_letters + 1  
     
     def ask_for_input(self):
-        
+
             self.guess = input("Enter a letter: ")
             if len(self.guess) == 1 and self.guess.isalpha():
                 if self.guess in self.list_of_guesses:
                     print("You have already tried that letter.")
                 else:
                     print("Good Guess.")
+                    
                     self.check_guess(self.guess)
                 #break
             else:
