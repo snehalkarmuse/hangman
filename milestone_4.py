@@ -38,7 +38,7 @@ class Hangman:
             print(f"Sorry {self.guess} is not in the word. Try again.")
             print(f"you have {self.num_lives} lives left.")
             print(self.word_guessed)
-        
+        self.list_of_guesses.append(self.guess)
     
     def ask_for_input(self):
 
@@ -48,7 +48,6 @@ class Hangman:
                     print("You have already tried that letter.")
                 else:
                     print("Good Guess.")
-                    
                     self.check_guess(self.guess)
                 #break
             else:
