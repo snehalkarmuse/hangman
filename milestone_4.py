@@ -5,9 +5,11 @@ class Hangman:
         self.word_list = word_list
         self.word = random.choice(self.word_list)
         self.num_lives = num_lives
-        self.word_guessed = ['_','_','_','_','_']
+        self.word_guessed = []
         self.num_letters = 0
         self.list_of_guesses = []
+        for i in self.word:
+            self.word_guessed.append("_")
 
     def check_guess(self, guess): 
         
@@ -27,7 +29,7 @@ class Hangman:
             print(f"Sorry {self.guess} is not in the word. Try again.")
             print(f"you have {self.num_lives} lives left.")
 
-        self.word_guesses[self.num_letters] = self.guess 
+        self.word_guessed[self.num_letters] = self.guess 
         print(self.word_guessed)
         self.num_letters = self.num_letters + 1  
     
