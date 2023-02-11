@@ -20,6 +20,6 @@ it prints the message wheather it is in the word or not.
 ## Milestone 4
 - create a class with name Hangman.
 - Declares attributes and methods.
-- Initilized with init method. 
-- In ask_for_input() method adding the guesses in word_guess attirbute replaces it with guess. Decrements num_lives.
-- check_guess() check each guess in word. If matches increments word_guess and decrement num_lives.
+- Initilized with init method. created for loop in init method to change the word_guessed list to "_" . num_letters is a number with unique letters set. crteated teh for loop to get through each word and count the length of it. created the set with unique letters. 
+- In ask_for_input() method adding the guesses in word_guess attirbute replaces it with guess. Decrements num_lives. printes the output accordingly to understand the user.
+- check_guess() check each guess in word. If matches increments word_guess and replace the word_guessed with letters from underscore. Otherwise decrement num_lives and make the changes in word_guessed. 
