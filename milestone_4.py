@@ -5,7 +5,7 @@ class Hangman:
         self.word_list = word_list
         self.word = random.choice(self.word_list)
         self.num_lives = num_lives
-        self.word_guesses = ['_','_','_','_','_']
+        self.word_guessed = ['_','_','_','_','_']
         self.num_letters = 0
         self.list_of_guesses = []
 
@@ -18,8 +18,8 @@ class Hangman:
             print(f"Good guess {self.guess} is in the word. ")
             for i in self.word:
                 if self.guess == i:
-                    self.word_guesses[self.num_letters] = self.guess 
-                    print(self.word_guesses)
+                    self.word_guessed[self.num_letters] = self.guess 
+                    print(self.word_guessed)
                     #self.num_letters = self.num_letters + 1  
                     self.num_lives = self.num_lives -1       
         else:
@@ -28,7 +28,7 @@ class Hangman:
             print(f"you have {self.num_lives} lives left.")
 
         self.word_guesses[self.num_letters] = self.guess 
-        print(self.word_guesses)
+        print(self.word_guessed)
         self.num_letters = self.num_letters + 1  
     
     def ask_for_input(self):
