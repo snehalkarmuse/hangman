@@ -23,3 +23,7 @@ it prints the message wheather it is in the word or not.
 - Initilized with init method. created for loop in init method to change the word_guessed list to "_" . num_letters is a number with unique letters set. crteated teh for loop to get through each word and count the length of it. created the set with unique letters. 
 - In ask_for_input() method adding the guesses in word_guess attirbute replaces it with guess. Decrements num_lives. printes the output accordingly to understand the user.
 - check_guess() check each guess in word. If matches increments word_guess and replace the word_guessed with letters from underscore. Otherwise decrement num_lives and make the changes in word_guessed. 
+## Milestone 5
+- created function call PlayGame(), which took word list as an argument. Initialzed variable called num_lives to 5. created the instance of the class called game. passed teh argument word list and num lives. Checked the input, if num_lives is equal to 5 then prints "you lost!" else call check_guess(). If you have still num_lives left and num_letters are not zero then prints "you won". 
+ - Call the function called PlayGame(), with word list as an argument.
+ - check the length of the unique letters left to fill in the word displayed with num_letters left. For this creat a set which will take unique letters and put that in num_letters. Write all this in initialize method in class. update according in check_guess function.
