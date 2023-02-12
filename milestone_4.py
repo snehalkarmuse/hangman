@@ -21,7 +21,7 @@ class Hangman:
                 
 
     def check_guess(self, guess): 
-        
+
         self.guess = guess
         self.guess = self.guess.lower()
        
@@ -40,7 +40,9 @@ class Hangman:
             print(f"Sorry, {self.guess} is not in the word.")
             print(f"You have {self.num_lives} lives left.")
             print(self.word_guessed)
+
         
+            
     
     def ask_for_input(self):
         while True:
@@ -49,7 +51,7 @@ class Hangman:
                     print("Invalid letter. Please, enter a single characher.")
             elif self.guess in self.list_of_guesses:
                     print("You already tried the letter!")
-            else:
+        else:
                 self.check_guess(self.guess)
     
 hangman = Hangman(["mango","orange","apple","peach","grape"], 5 )
