@@ -20,6 +20,7 @@ class Hangman:
             temp_length = len(temp)
         print("temp_length: ", temp_length)
         self.num_letters = temp_length
+        print("num_letters ", self.num_letters)
 
     def check_guess(self, guess): 
         #print("word is - ", self.word)
@@ -54,6 +55,7 @@ class Hangman:
                 print("Good Guess.")
                 self.list_of_guesses.append(self.guess)
                 self.check_guess(self.guess)
+                print("After check guess self num letter ", self.num_letters)
                 #break
         else:
             print("Invalid input.")
@@ -73,4 +75,4 @@ def playGame(word_list):
         else:
             game.ask_for_input()
 
-playGame(["mango","orange","apple","peach","grape"])
+playGame(["Watermelonbanana"])
