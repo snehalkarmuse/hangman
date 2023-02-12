@@ -88,7 +88,7 @@ jobs:
       - name: Verify milestone 4 tasks - Part 2
         id: verify-milestone-4-tasks-p2
         run: |
-          python -m unittest -v hangman_test.test_milestone4_p2
+          python -m unittest -v hangman_test.test_milestone4_p2 2> milestone_4_p2.txt
 
       - name: Tick off boxes in milestone 4 - Part 2
         run: |
