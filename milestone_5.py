@@ -68,9 +68,9 @@ def play_game(word_list):
         elif game.num_letters > 0:
             game.ask_for_input()
         elif game.num_lives != 0 and game.num_letters <= 0:
-            print("Congragulations. You won the game!")
+            print("Congratulations. You won the game!")
             break
         else:
             game.ask_for_input()
 
-play_game(["Watermelonbanana"])
+play_game(["banana"])
