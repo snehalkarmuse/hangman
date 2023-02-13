@@ -53,6 +53,7 @@ class Hangman:
             else:
                 self.check_guess(self.guess)
                 print("after check guess self num ", self.num_letters)
+                break
             #print("list of guesses ", self.list_of_guesses)
     
 hangman = Hangman(["banana"], 5 )
