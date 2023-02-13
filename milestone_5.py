@@ -58,7 +58,7 @@ class Hangman:
         else:
             print("Invalid input.")
         
-def playGame(word_list):
+def play_game(word_list):
     num_lives = 5    
     game = Hangman(word_list, num_lives)
     while True:
@@ -73,4 +73,4 @@ def playGame(word_list):
         else:
             game.ask_for_input()
 
-playGame(["Watermelonbanana"])
+play_game(["Watermelonbanana"])
