@@ -33,8 +33,9 @@ class Hangman:
                 if self.guess == i:
                     self.word_guessed[idx] = self.guess 
                     print(self.word_guessed)
-                    self.num_letters = self.num_letters - 1  
-                idx = idx + 1              
+                     
+                idx = idx + 1  
+            self.num_letters = self.num_letters - 1            
         else:
             self.num_lives = self.num_lives -1  
             print(f"Sorry, {self.guess} is not in the word.")
@@ -43,9 +44,6 @@ class Hangman:
             
          
         
-        
-        
-    
     def ask_for_input(self):
         self.guess = input("Enter a letter: ")
         if len(self.guess) == 1 and self.guess.isalpha():
