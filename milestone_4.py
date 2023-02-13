@@ -40,13 +40,11 @@ class Hangman:
             print(self.word_guessed)
 
         self.list_of_guesses.append(self.guess)
-
-        
-            
+       
     
     def ask_for_input(self):
         
-        while (self.num_lives > 0) and (self.num_letters > 0):
+        while (self.num_lives > 0) and (self.num_letters > 0) :
             self.guess = input("Enter a letter: ")
             if len(self.guess) != 1:
                     print("Invalid letter. Please, enter a single characher.")
