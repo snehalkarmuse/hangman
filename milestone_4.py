@@ -9,6 +9,8 @@ class Hangman:
         self.list_of_guesses = []
         for i in self.word:
             self.word_guessed.append("_")
+        # temp = set(self.word)
+        #self.num_length = len(temp)
         temp = set()
         temp_length = 0
         for i in self.word:
@@ -44,6 +46,7 @@ class Hangman:
     
     def ask_for_input(self):
         
+        while self.num_lives > 0:
             self.guess = input("Enter a letter: ")
             if len(self.guess) != 1:
                     print("Invalid letter. Please, enter a single characher.")
@@ -56,12 +59,3 @@ class Hangman:
     
 hangman = Hangman(["Watermelonbanana"], 5 )
 hangman.ask_for_input()
-# hangman.ask_for_input()
-
-# hangman.ask_for_input()
-# print("guessed list", hangman.list_of_guesses)
-# print("gussed letter set ", set(hangman.list_of_guesses))
-# used_set = set(['a', 't', 'w'])
-# actual_set = set(hangman.list_of_guesses)
-# diff = used_set.difference(actual_set)
-# print("diff is ", len(diff))
