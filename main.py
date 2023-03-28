@@ -18,9 +18,9 @@ class Hangman:
         for i in self.word:
             temp.add(i)
             temp_length = len(temp)
-        print("temp_length: ", temp_length)
+        #print("temp_length: ", temp_length)
         self.num_letters = temp_length
-        print("num_letters ", self.num_letters)
+        #print("num_letters ", self.num_letters)
 
     def check_guess(self, guess): 
         #print("word is - ", self.word)
@@ -32,10 +32,11 @@ class Hangman:
             for i in self.word:
                 if self.guess == i:
                     self.word_guessed[idx] = self.guess 
-                    print(self.word_guessed)
+                
                      
                 idx = idx + 1  
-            self.num_letters = self.num_letters - 1            
+            self.num_letters = self.num_letters - 1   
+            print(self.word_guessed)         
         else:
             self.num_lives = self.num_lives -1  
             print(f"Sorry, {self.guess} is not in the word.")
@@ -73,4 +74,4 @@ def play_game(word_list):
         else:
             game.ask_for_input()
 
-play_game(["banana"])
+play_game(["banana","apple","papaya","watermelon","melon","orange","strawberry"])
