@@ -1,3 +1,4 @@
+![alt text](https://replit.com/cdn-cgi/image/quality=80,metadata=copyright,format=auto/https://storage.googleapis.com/replit/images/1585940175021_39360a4db2b546a4455230a428a321de.png)
 # Hangman
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
