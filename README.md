@@ -1,4 +1,4 @@
-![alt text](https://replit.com/cdn-cgi/image/quality=80,metadata=copyright,format=auto/https://storage.googleapis.com/replit/images/1585940175021_39360a4db2b546a4455230a428a321de.png)
+
 # Hangman
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
@@ -17,7 +17,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
   Calls check_guess() with the parameter which gets from the user.
 - check_guess() with user input parameter, convert taht into lower case first. check it is in the word which computer selected   from the world_list.
 it prints the message wheather it is in the word or not.
-
+![alt text](https://replit.com/cdn-cgi/image/quality=80,metadata=copyright,format=auto/https://storage.googleapis.com/replit/images/1585940175021_39360a4db2b546a4455230a428a321de.png)
 ## Milestone 4
 - create a class with name Hangman.
 - Declares attributes and methods.
